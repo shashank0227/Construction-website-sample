@@ -1,0 +1,491 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.header {
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(
+      rgba(31, 6, 6, 0.7),
+      rgba(73, 152, 158, 0.7)
+    ),
+    url(../Image/Home\ main.jpg);
+
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+nav {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+nav h1 {
+  font-family: sans-serif;
+  text-decoration: none;
+  font-weight: 540;
+  font-family: "Pangolin", cursive;
+}
+
+.nav-link {
+  margin: 1%;
+  flex: 1;
+  text-align: right;
+}
+
+.nav-link ol li {
+  list-style: none;
+  display: inline-block;
+  padding: 25px 12px;
+  position: relative;
+}
+
+.nav-link ol li a {
+  color: seashell;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: "KoHo", sans-serif;
+  font-weight: 300;
+}
+.Company-name-text {
+  text-decoration: none;
+  text-align: center;
+  margin: 10%;
+  color: aliceblue;
+  border-radius: 25px;
+  background: rgba(63, 35, 66, 0.7);
+  padding: 20px;
+  width: 268px;
+  height: 30px;
+}
+
+.nav-link ol li::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background: salmon;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+
+.nav-link ol li:hover::after {
+  width: 100%;
+}
+
+.text-box {
+  width: 90%;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.text-box h1 {
+  font-size: 62px;
+}
+
+.text-box p {
+  margin: 20px 0 40px;
+  font-size: 18px;
+  color: #fff;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 400;
+}
+
+.main-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 25px;
+  padding: 15px 50px;
+  font-size: 14px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+}
+
+.main-btn:hover {
+  background: tomato;
+  border: 1px solid rgb(224, 73, 73);
+  transition: 1s;
+}
+
+.btn-img {
+  display: none;
+}
+
+/* Appply for device have width less then 700 px */
+
+@media (max-width: 700px) {
+  .text-box h1 {
+    font-size: 30px;
+  }
+
+  .text-box p {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-weight: 600;
+    margin-top: 10px;
+  }
+
+  .nav-link ol li {
+    display: block;
+  }
+  .nav-link {
+    position: absolute;
+    background: #f44336;
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: 0;
+    text-align: left;
+    z-index: 2;
+  }
+
+  .btn-img {
+    display: block;
+    color: #fff;
+    margin: 10px;
+    height: 3vh;
+    cursor: pointer;
+  }
+}
+
+/* Header end  */
+
+/* Project start */
+
+.project {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 90px;
+}
+
+.project h1 {
+  font-size: 40px;
+  font-weight: 680;
+  font-family: "KoHo", sans-serif;
+}
+
+.project p {
+  color: black;
+  font-size: 18px;
+  font-weight: 300px;
+  line-height: 22px;
+  padding: 10px;
+  font-family: "KoHo", sans-serif;
+}
+
+.row {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.project-col {
+  flex-basis: 30%;
+  background: linear-gradient(
+    to bottom,
+    rgba(186, 163, 189, 0.5),
+    rgba(210, 191, 212, 0.375),
+    rgba(248, 245, 248, 0.25)
+  );
+  border-radius: 25px;
+  margin-bottom: 5%;
+  padding: 20px 12px;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+
+.project-col h3 {
+  text-align: center;
+  font-weight: 600;
+  margin: 10px 0;
+  font-family: "KoHo", sans-serif;
+}
+
+.project-col p {
+  font-family: "KoHo", sans-serif;
+}
+
+.project-col:hover {
+  box-shadow: 0 0 200px 0px rgba(77, 74, 74, 0.25);
+}
+
+@media (max-width: 700px) {
+  .row {
+    flex-direction: column;
+  }
+}
+
+/* project end */
+
+/* ofice start */
+
+.office {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 60px;
+}
+.office h1 {
+  font-family: "KoHo", sans-serif;
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.office p {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.office-col {
+  flex-basis: 32%;
+  border-radius: 15px;
+  margin-top: 30px;
+  position: relative;
+  overflow: hidden;
+}
+
+.office-col img {
+  width: 100%;
+  display: block;
+}
+
+.layer {
+  background: transparent;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.6s;
+}
+.layer h3 {
+  font-family: "KoHo", sans-serif;
+  width: 100%;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+  font-size: 22px;
+  bottom: 0;
+
+  text-align: center;
+  padding-bottom: 20px;
+
+  transition: translatex(-50%);
+  position: absolute;
+  opacity: 0;
+  transition: 1s;
+}
+
+.layer:hover h3 {
+  bottom: 49%;
+  opacity: 1;
+}
+
+.layer:hover {
+  background: rgba(115, 116, 110, 0.3);
+}
+
+.service {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+  position: flex;
+}
+
+.service h1 {
+  font-family: "KoHo", sans-serif;
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.service p {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.service-col {
+  flex-basis: 30%;
+  height: auto;
+  border-radius: 25px;
+  margin-bottom: 5%;
+  text-align: center;
+  align-self: center;
+  border-radius: 25px;
+  background: linear-gradient(
+    to bottom,
+    rgba(194, 189, 189, 0.6),
+    rgba(194, 189, 189, 0.5),
+    rgba(194, 189, 189, 0.4),
+    rgba(194, 189, 189, 0.25),
+    rgba(194, 189, 189, 0.15),
+    rgba(194, 189, 189, 0.09)
+  );
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.service-col img {
+  flex-basis: 30%;
+  width: 100%;
+  border-radius: 25px 25px 3px 3px; /* top left, top right, bottom right, padding-bottom;*/
+
+  justify-content: flex-start;
+}
+@keyframes h3-text {
+  0% {
+    visibility: 0%;
+  }
+  25% {
+    visibility: 25%;
+  }
+  50% {
+    visibility: 50%;
+  }
+  75% {
+    visibility: 75%;
+  }
+  100% {
+    visibility: 100%;
+  }
+}
+
+.service-col h3 {
+  font-family: "KoHo", sans-serif;
+  width: 100px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.service-col p {
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-align: center;
+  opacity: 0;
+  display: none;
+  transition: 2s;
+}
+
+.service-col:hover p {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+  transition: 3s;
+}
+
+.service-col:hover {
+  box-shadow: 0 0 200px 0px rgba(77, 74, 74, 0.55);
+  height: auto;
+  transition: 3s;
+}
+
+/* service section end */
+
+/* Contact start */
+
+.contact {
+  margin: 100px auto;
+  width: 80%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../Image/banner2.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 25px;
+  text-align: center;
+  padding: 100px 0;
+}
+.contact:hover {
+  box-shadow: 0 0 300px 0px rgba(77, 74, 74, 0.55);
+  transition: 3s;
+}
+
+.contact h1 {
+  color: #fff;
+  margin-bottom: 20px;
+  padding: 0;
+  font-family: "KoHo", sans-serif;
+}
+@media (max-width: 700px) {
+  .contact h1 {
+    font-size: 22px;
+  }
+}
+
+/* Contact end here */
+
+/* footer start here */
+
+.footer {
+  width: 100%;
+  background-color: rgb(146, 11, 11);
+  height: auto;
+  text-align: left;
+  display: flexbox;
+  margin: 0 auto;
+  border-radius: 25px 25px 0 0;
+}
+
+.footer-col {
+  flex-basis: 30%;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 50px auto;
+}
+
+.footer-col h1 {
+  margin-left: 30%;
+  color: #fff;
+}
+
+.footer-logo {
+  padding: 10px;
+  font-family: "KoHo", sans-serif;
+  background: rgba(63, 35, 66, 0.7);
+  width: 100px;
+  border-radius: 10px;
+  margin: 10px 20px;
+}
+
+.footer-col h2 {
+  font-family: "KoHo", sans-serif;
+  padding: auto;
+  margin: 10px 30px;
+  width: 200px;
+  color: #fff;
+}
+
+.footer-logo-img {
+  justify-content: center;
+}
+
+.footer-logo-img img {
+  padding: 10px;
+}
+
+.footer-col p {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 600;
+  padding: auto;
+  margin: 10px 30px;
+  position: inherit;
+  color: #fff;
+}
